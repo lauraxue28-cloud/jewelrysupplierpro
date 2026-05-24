@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jewelry Supplier Pro | Low-MOQ Jewelry Sample Support</title>
+  <meta name="description" content="Jewelry Supplier Pro helps small jewelry brands coordinate low-MOQ sample development, huggie earring references, packaging checks, and China-side production follow-up.">
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --paper: #fffdf8;
+      --ink: #1d2522;
+      --muted: #5f6965;
+      --line: #ded8cd;
+      --green: #0d665c;
+      --green-dark: #094c44;
+      --gold: #c7943f;
+      --rose: #9b5f55;
+      --blue: #304f6f;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 253, 248, .94);
+    }
+
+    .nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+    }
+
+    .mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 6px;
+      background: var(--green);
+      color: #fff;
+      font-size: 14px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 6px;
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--green);
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--green);
+    }
+
+    .button:hover {
+      background: var(--green-dark);
+      border-color: var(--green-dark);
+      color: #fff;
+    }
+
+    .hero {
+      padding: 62px 0 44px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+      align-items: center;
+      gap: 44px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 720px;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.04;
+      letter-spacing: 0;
+      overflow-wrap: break-word;
+    }
+
+    .lead {
+      margin: 20px 0 0;
+      max-width: 660px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.65;
+      overflow-wrap: break-word;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .proof {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 32px;
+      max-width: 720px;
+    }
+
+    .proof div {
+      border-top: 3px solid var(--gold);
+      padding-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .visual {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 18px 42px rgba(29, 37, 34, .10);
+    }
+
+    .visual img {
+      width: 100%;
+      display: block;
+      border-radius: 6px;
+      background: #f3eee5;
+    }
+
+    .caption {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    section {
+      padding: 46px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 28px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .section-lead {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-wrap: break-word;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.58;
+    }
+
+    .card p { margin: 0; }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li + li { margin-top: 8px; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .step {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .step b {
+      display: block;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .good { border-top: 4px solid var(--green); }
+    .bad { border-top: 4px solid var(--rose); }
+
+    .notice {
+      margin-top: 24px;
+      padding: 18px 20px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--blue);
+      border-radius: 8px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 34px 0 46px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .grid,
+      .steps,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .proof {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .wrap {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero {
+        padding-top: 42px;
+        gap: 28px;
+      }
+
+      .hero > div,
+      .section-lead,
+      .card,
+      .step,
+      .notice {
+        max-width: 340px;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 1.14;
+      }
+
+      .lead {
+        font-size: 16px;
+        line-height: 1.62;
+      }
+
+      .eyebrow {
+        font-size: 12px;
+        line-height: 1.35;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .visual {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="mark">JSP</div>
+        <span>Jewelry Supplier Pro</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#focus">Focus</a>
+        <a href="#process">Process</a>
+        <a href="#fit">Fit</a>
+        <a href="mailto:sales@jewelrysupplierpro.com">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">China-side sample and production follow-up for small jewelry brands</p>
+        <h1>Low-MOQ jewelry sample support without pushing a giant catalog.</h1>
+        <p class="lead">
+          Jewelry Supplier Pro helps boutique jewelry brands turn reference styles into sample-ready directions, then checks practical details before shipment: plating options, small stones, packaging photos, and sample-to-bulk consistency.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:sales@jewelrysupplierpro.com?subject=Jewelry%20sample%20development%20support">Email Jewelry Supplier Pro</a>
+          <a class="button secondary" href="#process">See how we work</a>
+        </div>
+        <div class="proof" aria-label="Service highlights">
+          <div>Small-batch sample coordination for boutique and DTC jewelry brands.</div>
+          <div>Current reference focus: small gold huggies, CZ huggies, pearl and small-stone variations.</div>
+          <div>Human-reviewed supplier follow-up; no automated mass sourcing or unverified claims.</div>
+        </div>
+      </div>
+      <div class="visual">
+        <img src="assets/huggie-capsule-preview.png" alt="Small gold huggie earring capsule reference preview">
+        <p class="caption">
+          Reference direction only. Final materials, plating, MOQ, sample fee, and lead time are confirmed case by case before quoting.
+        </p>
+      </div>
+    </div>
+
+    <section id="focus">
+      <div class="wrap">
+        <h2>Current sample direction</h2>
+        <p class="section-lead">
+          The first sample board is intentionally narrow: small gold huggie earrings for everyday boutique collections. Narrowing the range makes supplier checks, sample comparison, and customer feedback faster.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h3>Textured gold huggies</h3>
+            <p>Small hoops, croissant-style texture, twist or ribbed finishes, and everyday gold-tone designs.</p>
+          </article>
+          <article class="card">
+            <h3>CZ huggies</h3>
+            <p>Simple small-stone huggies where stone setting, glue, polish, and plating consistency need careful checking.</p>
+          </article>
+          <article class="card">
+            <h3>Pearl or small-stone variations</h3>
+            <p>One or two visual variations for boutique collections, kept small enough for low-MOQ testing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <h2>How we support a small test</h2>
+        <p class="section-lead">
+          We do not start with a full catalog. We start with a short reference board, supplier feasibility, and the risk points that affect real orders.
+        </p>
+        <div class="steps">
+          <div class="step">
+            <b>1. Reference board</b>
+            <p>Build a 3-5 style direction based on your current brand look.</p>
+          </div>
+          <div class="step">
+            <b>2. Supplier check</b>
+            <p>Review material, plating route, MOQ, sample fee, and lead time.</p>
+          </div>
+          <div class="step">
+            <b>3. Sample follow-up</b>
+            <p>Track photos, stone setting, finishing, ear post details, and packaging.</p>
+          </div>
+          <div class="step">
+            <b>4. Bulk readiness</b>
+            <p>Compare approved samples with bulk photos before shipment decisions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fit">
+      <div class="wrap">
+        <h2>Best fit</h2>
+        <div class="split">
+          <article class="card good">
+            <h3>Good fit</h3>
+            <ul>
+              <li>Boutique jewelry stores testing new gold-tone earrings.</li>
+              <li>DTC brands that need China-side sample and packaging follow-up.</li>
+              <li>Teams that want a small reference board before asking for quotes.</li>
+            </ul>
+          </article>
+          <article class="card bad">
+            <h3>Not a fit</h3>
+            <ul>
+              <li>One-off end-customer customization or repair work.</li>
+              <li>Requests for unverified waterproof, hypoallergenic, or compliance claims.</li>
+              <li>Large catalog scraping, dropship automation, or lowest-price-only sourcing.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="notice">
+          Compliance note: we can help request supplier declarations, product details, and test documents when available, but we do not certify waterproof, hypoallergenic, nickel-free, lead-free, or regulatory claims ourselves.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong>Jewelry Supplier Pro</strong><br>
+        Qingdao, China
+      </div>
+      <div>
+        Email: <a href="mailto:sales@jewelrysupplierpro.com">sales@jewelrysupplierpro.com</a><br>
+        Independent from SX Jewelry. Pet memorial projects use a separate route.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
