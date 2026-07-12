@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Memorial Jewelry Development | Jewelry Supplier Pro</title>
+  <meta name="description" content="China-side sourcing and sample follow-up for blank or engrave-ready pet memorial jewelry based on buyer references.">
+  <link rel="canonical" href="https://www.jewelrysupplierpro.com/pet-memorial.html">
+  <style>
+    :root {
+      --ink: #18201d;
+      --muted: #5d6863;
+      --paper: #ffffff;
+      --white: #ffffff;
+      --soft: #f3f5f4;
+      --line: #d8ddda;
+      --green: #146b5c;
+      --green-dark: #0e4e44;
+      --gold: #b88432;
+      --charcoal: #171b19;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 0;
+    }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .site-header {
+      position: absolute;
+      inset: 0 0 auto;
+      z-index: 3;
+      border-bottom: 1px solid rgba(255,255,255,.22);
+    }
+    .nav {
+      width: min(1160px, calc(100% - 40px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      color: #fff;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.52);
+      border-radius: 6px;
+      background: rgba(255,255,255,.1);
+      font-size: 13px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .nav-links a {
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      min-height: min(82vh, 760px);
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background-color: var(--charcoal);
+      background-image: url("assets/pet-memorial/paw-pendant-reference.png");
+      background-position: center 44%;
+      background-size: cover;
+      color: #fff;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 14, 12, .66);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 150px 0 72px;
+    }
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { margin-top: 0; letter-spacing: 0; }
+    h1 {
+      max-width: 780px;
+      margin-bottom: 20px;
+      font-size: 56px;
+      line-height: 1.04;
+    }
+    h2 {
+      margin-bottom: 18px;
+      font-size: 32px;
+      line-height: 1.16;
+    }
+    h3 {
+      margin-bottom: 10px;
+      font-size: 19px;
+      line-height: 1.3;
+    }
+    p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.66;
+    }
+    .hero-copy {
+      max-width: 680px;
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .button {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border: 1px solid var(--green);
+      border-radius: 6px;
+      background: var(--green);
+      color: var(--white);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .button.secondary {
+      border-color: rgba(255,255,255,.54);
+      background: rgba(0,0,0,.12);
+    }
+
+    .trust-band {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+    .trust-inner {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .trust-item {
+      min-height: 112px;
+      padding: 24px 28px;
+      border-right: 1px solid rgba(255,255,255,.18);
+    }
+    .trust-item:last-child { border-right: 0; }
+    .trust-item strong { display: block; margin-bottom: 7px; }
+    .trust-item span { color: rgba(255,255,255,.72); line-height: 1.55; }
+
+    section {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 76px 0;
+    }
+    h2 {
+      max-width: 760px;
+      margin: 0 0 18px;
+      font-size: 36px;
+      line-height: 1.18;
+    }
+    .section-lead {
+      max-width: 760px;
+      margin: 0 0 34px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.68;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--white);
+    }
+    .product-card img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      background: var(--charcoal);
+    }
+    .product-copy { padding: 24px; }
+    .product-copy h3 { margin: 0 0 10px; font-size: 21px; }
+    .product-copy p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.62;
+    }
+    .reference-note {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .process-band {
+      width: 100%;
+      background: var(--white);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .process-band section { padding: 70px 0; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+    .step {
+      padding: 25px 22px 0 0;
+      border-right: 1px solid var(--line);
+    }
+    .step:last-child { border-right: 0; padding-right: 0; padding-left: 22px; }
+    .step:not(:first-child) { padding-left: 22px; }
+    .step-number {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--green);
+      font-weight: 700;
+    }
+    .step h3 { margin: 0 0 8px; font-size: 18px; }
+    .step p { margin: 0; color: var(--muted); line-height: 1.62; }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .check-card {
+      min-height: 176px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--white);
+    }
+    .check-card h3 { margin: 0 0 9px; font-size: 18px; }
+    .check-card p { margin: 0; color: var(--muted); line-height: 1.62; }
+
+    .boundary {
+      width: 100%;
+      background: var(--charcoal);
+      color: var(--white);
+    }
+    .boundary section { padding: 66px 0; }
+    .boundary .section-lead { color: rgba(255,255,255,.72); }
+    .boundary-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px 28px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .boundary-list li {
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,.18);
+      color: rgba(255,255,255,.82);
+      line-height: 1.55;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+      gap: 44px;
+      align-items: start;
+    }
+    .contact-details {
+      padding: 25px;
+      border-left: 4px solid var(--gold);
+      background: var(--white);
+    }
+    .contact-details p { margin: 0 0 12px; color: var(--muted); line-height: 1.6; }
+    .contact-details p:last-child { margin-bottom: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: var(--white);
+    }
+    .footer-inner {
+      width: min(1160px, calc(100% - 40px));
+      min-height: 82px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 820px) {
+      .nav-links { display: none; }
+      .hero { min-height: 690px; background-position: 58% center; }
+      h1 { font-size: 46px; max-width: 650px; }
+      .trust-inner, .steps, .check-grid { grid-template-columns: 1fr 1fr; }
+      .trust-item:nth-child(2) { border-right: 0; }
+      .trust-item:last-child { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.18); }
+      .step:nth-child(2) { border-right: 0; }
+      .step:nth-child(n+3) { margin-top: 28px; }
+      .contact { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .nav, .hero-inner, .trust-inner, section, .footer-inner {
+        width: min(100% - 30px, 1160px);
+      }
+      .hero {
+        min-height: 620px;
+        background-position: 62% center;
+      }
+      .hero-inner { padding: 72px 0 54px; }
+      h1 { font-size: 38px; }
+      h2 { font-size: 30px; }
+      .hero-copy { font-size: 17px; }
+      .actions { flex-direction: column; align-items: stretch; }
+      .button { width: 100%; }
+      .trust-inner, .product-grid, .steps, .check-grid, .boundary-list { grid-template-columns: 1fr; }
+      .trust-item, .trust-item:nth-child(2), .trust-item:last-child {
+        grid-column: auto;
+        border-right: 0;
+        border-top: 1px solid rgba(255,255,255,.18);
+      }
+      .trust-item:first-child { border-top: 0; }
+      .product-card img { height: 300px; }
+      .step, .step:not(:first-child), .step:last-child {
+        margin-top: 0;
+        padding: 20px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .step:last-child { border-bottom: 0; }
+      .footer-inner { min-height: 110px; flex-direction: column; align-items: flex-start; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Jewelry Supplier Pro home">
+        <span class="brand-mark">JSP</span>
+        <span>Jewelry Supplier Pro</span>
+      </a>
+      <div class="nav-links">
+        <a href="#directions">Product directions</a>
+        <a href="#process">Process</a>
+        <a href="#boundaries">Boundaries</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Pet memorial jewelry development</p>
+        <h1>Pet memorial jewelry, developed from your reference.</h1>
+        <p class="hero-copy">
+          China-side sourcing and sample follow-up for blank or engrave-ready memorial pieces. Send a product link, reference image, drawing, or physical sample and we will check the practical production route.
+        </p>
+        <div class="actions">
+          <a class="button" href="mailto:terry@jewelrysupplierpro.com?subject=Pet%20memorial%20jewelry%20reference">Send a reference</a>
+          <a class="button secondary" href="#process">See the process</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-band" aria-label="Service summary">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <strong>Reference-led</strong>
+          <span>No stock assumption. We start from the buyer's required style.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Material checked per design</strong>
+          <span>Stainless steel, selected plated metals, or 925 sterling silver by request.</span>
+        </div>
+        <div class="trust-item">
+          <strong>MOQ confirmed after review</strong>
+          <span>Quantity, sample cost, and lead time depend on the selected construction.</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="directions">
+      <p class="eyebrow">Reference directions</p>
+      <h2>Focused categories for memorial businesses and pet-care brands</h2>
+      <p class="section-lead">
+        These images show development directions only. They are not confirmation of current stock, final material, dimensions, MOQ, or price.
+      </p>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="assets/pet-memorial/paw-pendant-reference.png" alt="Paw-shaped pet memorial pendant reference direction">
+          <div class="product-copy">
+            <h3>Paw pendants and small charms</h3>
+            <p>Blank, engrave-ready, photo-area, or simple keepsake directions can be checked against your preferred size and finish.</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="assets/pet-memorial/urn-tube-reference.png" alt="Tube-style memorial pendant reference direction">
+          <div class="product-copy">
+            <h3>Fillable and screw-closure pendants</h3>
+            <p>Construction review can include the closure, screw thread, sealing ring, chain connection, visible finish, and packaging fit.</p>
+          </div>
+        </article>
+      </div>
+      <p class="reference-note">Additional directions may include engrave-ready tags, compact lockets, keyrings, packaging, and solid-wood memorial boxes.</p>
+    </section>
+
+    <div class="process-band" id="process">
+      <section>
+        <p class="eyebrow">Development process</p>
+        <h2>A short first round, then targeted supplier checking</h2>
+        <p class="section-lead">The first message only needs enough information to avoid searching the wrong product route.</p>
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">01</span>
+            <h3>Send the reference</h3>
+            <p>Share one to three images, links, drawings, or a physical sample.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">02</span>
+            <h3>Define essentials</h3>
+            <p>Confirm material, key dimensions, finish, and approximate trial quantity.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">03</span>
+            <h3>Check feasibility</h3>
+            <p>We review suitable suppliers, construction risks, MOQ direction, and sample route.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">04</span>
+            <h3>Review the sample</h3>
+            <p>Visible finish, assembly, closure, packaging, and agreed details are checked before bulk discussion.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section>
+      <p class="eyebrow">What we review</p>
+      <h2>Practical details that affect the finished product</h2>
+      <div class="check-grid">
+        <article class="check-card">
+          <h3>Material route</h3>
+          <p>Supplier-declared base material, surface finish, plating route, and available documentation.</p>
+        </article>
+        <article class="check-card">
+          <h3>Construction</h3>
+          <p>Jump rings, chain connection, screw thread, closure, sealing parts, engraving area, and assembly.</p>
+        </article>
+        <article class="check-card">
+          <h3>Presentation</h3>
+          <p>Pouch, box, insert card, labeling, visible defects, and sample-to-bulk consistency points.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="boundary" id="boundaries">
+      <section>
+        <p class="eyebrow">Clear boundaries</p>
+        <h2>Product sourcing and development, without hidden service claims</h2>
+        <p class="section-lead">These boundaries keep the project practical for both the buyer and supplier.</p>
+        <ul class="boundary-list">
+          <li>We do not handle ashes, hair, resin filling, or end-customer personalization.</li>
+          <li>Product availability, MOQ, price, and lead time are confirmed only after supplier review.</li>
+          <li>Material and compliance documents are requested from suppliers or laboratories; we do not self-certify.</li>
+          <li>Buyer references remain the basis for development. Similar public images are used only as direction.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section id="contact" class="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Start with one reference and the intended quantity</h2>
+        <p class="section-lead">
+          A short first review is usually enough to identify whether the project should use an existing component, a modified style, or a custom development route.
+        </p>
+        <a class="button" href="mailto:terry@jewelrysupplierpro.com?subject=Pet%20memorial%20jewelry%20reference">Email Terry</a>
+      </div>
+      <div class="contact-details">
+        <p><strong>Terry Sun</strong></p>
+        <p>Jewelry Supplier Pro</p>
+        <p>Qingdao, China</p>
+        <p><a href="mailto:terry@jewelrysupplierpro.com">terry@jewelrysupplierpro.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Jewelry Supplier Pro</span>
+      <span>Pet memorial jewelry sourcing and sample follow-up from Qingdao, China.</span>
+    </div>
+  </footer>
+</body>
+</html>
